@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manchitas - Artículos para Mascotas</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root {
+      --color-turquesa: #40c4c9;
+      --color-fondo: #f9fbfc;
+      --color-texto: #333;
+      --color-blanco: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+    }
+
+    header {
+      background: var(--color-turquesa);
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      color: var(--color-turquesa);
+      border-bottom: 2px solid var(--color-turquesa);
+      padding-bottom: 0.5rem;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .contacto {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .whatsapp-btn {
+      background: var(--color-turquesa);
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--color-turquesa);
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Manchitas</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>En Manchitas encontrarás todo lo que tu mascota necesita, con estilo moderno y cómodo.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="Copia de IMG-20241202-WA0025.jpg" alt="Cama gris peluda" />
+        <h3>Cama Peluda Gris</h3>
+        <p>Ideal para mascotas grandes. Suave, cómoda y abrigadora.</p>
+      </div>
+      <div class="product-card">
+        <img src="Copia de D_NQ_NP_941152-MLM47373752755_092021-O.webp" alt="Cama rosa huellitas" />
+        <h3>Cama Rosada con Huellitas</h3>
+        <p>Diseño colorido, suave al tacto. Perfecta para mascotas pequeñas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="Copia de IMG-20241202-WA0025.jpg" alt="Cama gris peluda" />
+      <img src="Copia de D_NQ_NP_941152-MLM47373752755_092021-O.webp" alt="Cama rosada huellitas" />
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o deseas hacer un pedido? Escríbenos por WhatsApp:</p>
+    <a class="whatsapp-btn" href="https://wa.me/5211234567890" target="_blank">
+      📲 Consultar por WhatsApp
+    </a>
+  </section>
+</main>
+
+<footer>
+  © 2025 Manchitas - Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
